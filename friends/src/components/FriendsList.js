@@ -14,10 +14,10 @@ class FriendsList extends React.Component {
 		return (
 			<div>
 				<h1>Secret Agents</h1>
-				<div className="wrapper">
+				<ul className="wrapper">
 					{console.log('insideRender', this.props.friends)}
 					{this.props.friends.map((friend, index) => <Friend key={index} info={friend} />)}
-				</div>
+				</ul>
 			</div>
 		);
 	}
